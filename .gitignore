@@ -13,6 +13,7 @@
 
 #storybook statics
 /storybook-static
+/docs-build
 
 # misc
 .DS_Store
