@@ -23,6 +23,7 @@ const Task = ({ task: { id, title, state }, onArchiveTask, onPinTask }) => (
         value={title}
         readOnly={true}
         placeholder='Input title'
+        style={{ background: 'red' }}
       />
     </div>
 
@@ -44,10 +45,10 @@ Task.propTypes = {
   task: PropTypes.shape({
     id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    state: PropTypes.string.isRequired
+    state: PropTypes.string.isRequired,
   }).isRequired,
   onArchiveTask: PropTypes.func,
-  onPinTask: PropTypes.func
-}
+  onPinTask: PropTypes.func,
+};
 
 export default Task;
